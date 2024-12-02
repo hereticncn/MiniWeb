@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link type="image/x-icon" href="favlog.png" rel="icon">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <nav class="nav__bar">
+                    <ul>
+                        <li id="todo" class="item">TO DO LIST</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="wrapper__section">
+            <div class="alert__modal">
+                <span class="alert__text">Invalid login or password</span>
+            </div>
+            <div class="window__login">
+                <div class="window__left">
+                    <p class="hello__text">Welcome to our website! First you need to register or log in using a password! </p>
+                    <img src="logimage.png">
+                    
+                </div>
+                <div class="window__right">
+                    <div class="right__content">
+                        <span class="text">Hello, friend! </span>
+
+                        <div class="inputs__only">
+                            <input id="input_log" class="input" tabindex="1" autocomplete="off" placeholder ="Please, сreate a login" required autofocus>
+                            <input id="input_pass" type="password" class="input" tabindex="2" autocomplete="off" placeholder ='Please, create your password'>
+                            <img class="pass__eye" src="eye.svg" alt="eye-password">
+                            <span class="window__instruct">
+                                <span class="pass__instruct">
+                                    Password must include: <br> A-Z, a-z, 0-9, @#$%^&*()-_+= .
+                                </span>
+                            </span>
+                            <span class="if__you">You have account?</span>
+                        </div>
+
+                        <button tabindex="3" class="btn__login">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper__two">
+        <div class="input__block">
+            <input id="inp" class="inp_add" autocomplete="off" placeholder="what I planned to do: ">
+            <button id="button_add" class="button_add">add</button>
+        </div>
+        <div id="wrapper__task" class="wrapper__task">
+            <ul id="nav__task"></ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <span class="footer__link">Made By Angelina Maksimovich</span>
+        <div class="footer__link">
+            <a href="https://github.com/hereticncn" class="footer__link">My Github</a>
+        </div>
+        <span class="footer__link">2024</span>
+        
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
