@@ -92,6 +92,9 @@ displayTasks();
 
 //const a = JSON.parse(localStorage.getItem('data'));
 //console.log(JSON.parse(localStorage.getItem('data')));
+if (localStorage.getItem("data") === null) {
+  tasks = localStorage.setItem('data', JSON.stringify(tasks));
+}
 
 if (JSON.parse(localStorage.getItem('data')) !== 0){
   tasks = JSON.parse(localStorage.getItem('data'));
