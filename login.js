@@ -12,7 +12,7 @@ const HEADER = document.querySelector('.header')
 const TODOLIST = document.querySelector('#todo')
 
 let baza = {                 //база паролей
-    name: 'Denis',
+    name: 'admin',
     password: 'admin'
 }
 
