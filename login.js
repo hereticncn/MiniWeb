@@ -99,6 +99,7 @@ if (JSON.parse(localStorage.getItem('data')) !== 0){
   console.log(tasks)
   //tasks = (JSON.parse(localStorage.getItem('data')));
 }else{
+    tasks = []
   addTask();
   displayTasks();
   console.log(1)
