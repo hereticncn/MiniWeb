@@ -441,7 +441,7 @@ span.window__instruct
     margin: 150px 10%;
   }
   @media (max-width: 460px){
-    width: 300px;
+    width: 93%;
     margin: 150px 3%;
   }
 }
